@@ -19,6 +19,10 @@
 			</property>
 		</bean>
 		
+		<bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+			<property name="defaultErrorView" value="error" />
+		</bean>
+		
 		<context:property-placeholder location="classpath:hibernate.properties"/>
 		<import resource="classpath:hibernate.cfg.xml"/>
 </beans>

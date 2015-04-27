@@ -19,6 +19,8 @@ public class GeneralDAOImpl implements GeneralDAO {
 
 	public <T> List<T> findAll(Class<T> type) {
 		return hibernateTemplate.loadAll(type);
+		
+		
 	}
 	
 	public void save(Object... entities) {

@@ -51,7 +51,9 @@
 			<property name="sessionFactory" ref="sessionFactory" />
 		</bean>
 		
-		<!-- <aop:aspectj-autoproxy /> -->
+		<bean class="com.markwar.advice.LoggingAspect"/>
+		
+		<aop:aspectj-autoproxy />
 		<!-- <tx:annotation-driven/> -->
 			
 </beans>	

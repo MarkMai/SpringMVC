@@ -8,7 +8,7 @@
   <name>mvc Maven Webapp</name>
   <url>http://maven.apache.org</url>
   
-  <properties>
+	<properties>
 		<springframe.version>3.1.4.RELEASE</springframe.version>
 		<unitils.version>3.1</unitils.version>
 	</properties>
@@ -281,6 +281,43 @@
 			<artifactId>logback-classic</artifactId>
 			<version>0.9.28</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-core</artifactId>
+			<version>${springframe.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-ldap</artifactId>
+			<version>${springframe.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>${springframe.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>${springframe.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-taglibs</artifactId>
+			<version>${springframe.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-acl</artifactId>
+			<version>${springframe.version}</version>
+		</dependency>
+		
   </dependencies>
   <build>
     <finalName>mvc</finalName>

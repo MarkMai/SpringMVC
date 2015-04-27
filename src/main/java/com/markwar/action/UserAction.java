@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-
 import com.markwar.model.User;
 import com.markwar.service.UserService;
 
@@ -23,7 +22,7 @@ public class UserAction {
 		user.setAge(12);
 		user.setName("mark");
 		user.setPassword("hello");
-		user.setUserId(1L);
+		user.setUserId(2L);
 		userService.createUser(user);
 		model.addAttribute("message", "添加用户成功");
 		return "hello";
@@ -32,7 +31,6 @@ public class UserAction {
 	@RequestMapping("/find")
 	public String find(Model model) {
 		User user = new User();
-		
 		user = userService.findByUserId(1L);
 		model.addAttribute("message", user.getName());
 		return "hello";
